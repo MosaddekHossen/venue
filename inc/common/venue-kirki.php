@@ -3,7 +3,7 @@ new \Kirki\Panel(
     'venue_panel_id',
     [
         'priority'    => 10,
-        'title'       => esc_html__('My Options', 'venue'),
+        'title'       => esc_html__('Header Options', 'venue'),
         'description' => esc_html__('My Panel Description.', 'venue'),
     ]
 );
