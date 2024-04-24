@@ -28,8 +28,26 @@ function venue_theme_setup()
             'footer-menu' => __('Footer Menu', 'harry'),
         )
     );
+
+    // remove_theme_support
+    remove_theme_support('widgets-block-editor');
 }
 add_action('after_setup_theme', 'venue_theme_setup');
+
+// Venue_copyright_option
+function Venue_copyright_option()
+{
+    $venue_copyright = get_theme_mod('venue_copyright', __('Copyright &copy; 2018 Company Name - Design: Template Mo', 'venue'));
+?>
+    <p><?php wp_kses_post($venue_copyright); ?></p>
+<?php
+}
+
+// venue_footer
+function venue_footer()
+{
+    get_template_part('/inc/template-parts/footer/footer-1');
+}
 
 // include_once
 include_once('inc/common/scripts.php');
