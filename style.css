@@ -18,6 +18,5 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #primary-nav li > a:hover,
 #primary-nav li.selected > a {
-  color: #4883ff;
   background-color: white !important;
 }
