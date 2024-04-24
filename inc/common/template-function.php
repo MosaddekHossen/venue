@@ -14,6 +14,17 @@ function venue_menu()
     wp_nav_menu(
         array(
             'theme_location'  => 'main-menu',
+            'container'       => 'false',
+            'menu_class'      => 'nav menu',
+        )
+    );
+}
+// venue_menu
+function venue_menu2()
+{
+    wp_nav_menu(
+        array(
+            'theme_location'  => 'footer-menu',
             'menu_class'      => 'nav menu',
             'menu_id'         => '',
             // 'fallback_cb'     => 'Medi_Walker_Nav_Menu::fallback',

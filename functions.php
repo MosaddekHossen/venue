@@ -24,8 +24,8 @@ function venue_theme_setup()
     // register_nav_menu
     register_nav_menus(
         array(
-            'main-menu' => __('Main Menu', 'harry'),
-            'footer-menu' => __('Footer Menu', 'harry'),
+            'main-menu' => __('Main Menu', 'venue'),
+            'footer-menu' => __('Footer Menu', 'venue'),
         )
     );
 

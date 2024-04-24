@@ -28,6 +28,7 @@
                 </div>
                 <div class="col-md-4">
                     <?php dynamic_sidebar('footer-sidebar-2'); ?>
+                    <?php venue_menu2(); ?>
                     <!-- <div class="useful-links">
                     <div class="footer-heading">
                         <h4>Useful Links</h4>
