@@ -32,3 +32,28 @@ function venue_header_logo()
     );
 }
 venue_header_logo();
+
+// venue_copyright
+function venue_copyright()
+{
+    new \Kirki\Section(
+        'venue_copyright_section_id',
+        [
+            'title'       => esc_html__('Footer Copyright', 'venue'),
+            'description' => esc_html__('My Copyright Section.', 'venue'),
+            'panel'       => 'panel_id',
+            'priority'    => 160,
+        ]
+    );
+
+    new \Kirki\Field\Text(
+        [
+            'settings' => 'venue_copyright',
+            'label'    => esc_html__('Venue Copyright', 'venue'),
+            'section'  => 'venue_copyright_section_id',
+            'default'  => esc_html__('Copyright &copy; 2024 Company Name - Design: Template Mo', 'venue'),
+            'priority' => 10,
+        ]
+    );
+}
+venue_copyright();
