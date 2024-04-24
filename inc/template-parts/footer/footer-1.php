@@ -80,3 +80,6 @@
     </footer>
 <?php endif; ?>
 
+<div class="sub-footer">
+    <?php venue_copyright_option(); ?>
+</div>
