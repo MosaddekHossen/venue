@@ -41,14 +41,14 @@ function venue_copyright()
         [
             'title'       => esc_html__('Footer Copyright', 'venue'),
             'description' => esc_html__('My Copyright Section.', 'venue'),
-            'panel'       => 'panel_id',
+            'panel'       => 'venue_panel_id',
             'priority'    => 160,
         ]
     );
 
     new \Kirki\Field\Text(
         [
-            'settings' => 'venue_copyright',
+            'settings' => 'venue_copyright_id',
             'label'    => esc_html__('Venue Copyright', 'venue'),
             'section'  => 'venue_copyright_section_id',
             'default'  => esc_html__('Copyright &copy; 2024 Company Name - Design: Template Mo', 'venue'),

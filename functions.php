@@ -35,11 +35,11 @@ function venue_theme_setup()
 add_action('after_setup_theme', 'venue_theme_setup');
 
 // Venue_copyright_option
-function Venue_copyright_option()
+function venue_copyright_option()
 {
-    $venue_copyright = get_theme_mod('venue_copyright', __('Copyright &copy; 2018 Company Name - Design: Template Mo', 'venue'));
+    $venue_copyright = get_theme_mod('venue_copyright_id', __('Copyright &copy; 2024 Company Name - Design: Template Mo', 'venue'));
 ?>
-    <p><?php wp_kses_post($venue_copyright); ?></p>
+    <p><?php echo wp_kses_post($venue_copyright); ?></p>
 <?php
 }
 
