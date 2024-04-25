@@ -19,19 +19,6 @@ function venue_menu()
         )
     );
 }
-// // venue_menu
-// function venue_menu2()
-// {
-//     wp_nav_menu(
-//         array(
-//             'theme_location'  => 'footer-menu',
-//             'menu_class'      => 'nav menu',
-//             'menu_id'         => '',
-//             // 'fallback_cb'     => 'Medi_Walker_Nav_Menu::fallback',
-//             // 'walker'     => new Medi_Walker_Nav_Menu,
-//         )
-//     );
-// }
 
 // venue_footer_widget
 function venue_footer_widget()
