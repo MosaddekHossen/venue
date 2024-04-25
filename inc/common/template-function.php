@@ -14,10 +14,8 @@ function venue_menu()
     wp_nav_menu(
         array(
             'theme_location'  => 'main-menu',
+            'container'       => 'false',
             'menu_class'      => 'nav menu',
-            'menu_id'         => '',
-            // 'fallback_cb'     => 'Medi_Walker_Nav_Menu::fallback',
-            // 'walker'     => new Medi_Walker_Nav_Menu,
         )
     );
 }
